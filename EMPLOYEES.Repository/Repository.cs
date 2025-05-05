@@ -6,6 +6,8 @@ using EMPLOYEES.DAL.DataModel;
 using EMPLOYEES.Model;
 using EMPLOYEES.Repository;
 using EMPLOYEES.Repository.Automapper;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 using EMPLOYEES.Repository.Common;
 
 namespace EMPLOYEES.Repository
@@ -30,5 +32,6 @@ namespace EMPLOYEES.Repository
             IEnumerable<EmployeesDomain> employeesDomains = _mappingService.Map<IEnumerable<EmployeesDomain>>(employeesDb);
             return employeesDomains;
         }
+        
     }
 }

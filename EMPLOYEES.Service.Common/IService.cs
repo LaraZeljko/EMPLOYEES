@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using EMPLOYEES.DAL.DataModel;
 using EMPLOYEES.Model;
+using System.Threading.Tasks;
 
 namespace EMPLOYEES.Service.Common
 {
@@ -10,5 +11,6 @@ namespace EMPLOYEES.Service.Common
     {
         IEnumerable<EmployeesLzeljko> GetAllEmployeesDb();
         IEnumerable<EmployeesDomain> GetAllEmployeesDomain();
+
     }
 }
